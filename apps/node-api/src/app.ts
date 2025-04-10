@@ -5,7 +5,8 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import { config } from './config';
 import { connectDB } from './models';
-import routes from './routes';
+import userRoutes from './routes/userRoutes';
+import postRoutes from './routes/postRoutes';
 
 const app = express();
 
@@ -16,7 +17,8 @@ app.use(cors());
 app.use(morgan('combined'));
 
 // Routes
-app.use('/api', routes);
+app.use('/api/users', userRoutes);
+app.use('/api/posts', postRoutes);
 
 // Database connection
 connectDB().then(() => {

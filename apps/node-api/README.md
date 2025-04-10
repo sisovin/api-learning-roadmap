@@ -63,6 +63,14 @@ node-api/
 - **PUT /api/users/:id**: Update a user by ID (requires authentication)
 - **DELETE /api/users/:id**: Delete a user by ID (requires authentication)
 
+### Blog Posts
+
+- **POST /api/posts**: Create a new blog post (requires authentication)
+- **GET /api/posts**: Get all blog posts
+- **GET /api/posts/:id**: Get a blog post by ID
+- **PUT /api/posts/:id**: Update a blog post by ID (requires authentication)
+- **DELETE /api/posts/:id**: Delete a blog post by ID (requires authentication)
+
 ## License
 
 This project is licensed under the MIT License.
