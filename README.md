@@ -6,14 +6,22 @@ Here's the full-stack project structure with key files listed for each directory
 
 ```
 api-learning-roadmap/
+├── .gitignore                    # Git ignore configurations
 ├── README.md                     # Project overview
 ├── roadmap.md                    # Learning roadmap steps
+├── tsconfig.json                 # Base TypeScript configuration
+├── tsconfig.node.json            # Node-specific TypeScript config
 ├── turbo.json                    # TurboRepo configuration 
 ├── vercel.json                   # Deployment configuration
 ├── package.json                  # Root package with workspaces
-├── tsconfig.json                 # Base TypeScript configuration
 ├── apps/
-│   ├── nextjs-blog/              # Frontend: Next.js blog + portfolio
+│   ├── client-examples/          # API client examples
+│   │   ├── src/
+│   │   │   ├── node-client/
+│   │   │   ├── python-client/
+│   │   │   └── browser-client/
+│   │   └── package.json
+│   ├── nextjs-blog/              # Frontend: Next.js blog
 │   │   ├── app/
 │   │   │   ├── api/
 │   │   │   │   └── route.ts      # API route handlers
@@ -38,6 +46,18 @@ api-learning-roadmap/
 │   │   │   └── api.ts            # API utilities
 │   │   ├── next.config.mjs       # Next.js config
 │   │   └── package.json          # Package dependencies
+│   ├── reactlynx-blog/           # Frontend: React blog alternative
+│   │   ├── src/
+│   │   │   ├── components/
+│   │   │   ├── pages/
+│   │   │   └── App.tsx
+│   │   └── package.json
+│   ├── vuereact-blog/            # Frontend: Vue + React blog
+│   │   ├── src/
+│   │   │   ├── components/
+│   │   │   ├── pages/
+│   │   │   └── App.vue
+│   │   └── package.json
 │   ├── node-api/                 # Backend: Node.js API
 │   │   ├── src/
 │   │   │   ├── controllers/
@@ -94,6 +114,12 @@ api-learning-roadmap/
 │   │   │   └── test_post_api.py  # Post API tests
 │   │   ├── requirements.txt      # Python dependencies
 │   │   └── Dockerfile            # Docker configuration
+│   ├── gateway-service/          # API Gateway for services
+│   │   ├── src/
+│   │   │   ├── routes/
+│   │   │   ├── middleware/
+│   │   │   └── app.ts
+│   │   └── package.json
 │   └── drizzle/                  # Shared database configuration
 │       ├── schema/
 │       │   ├── users.ts          # User schema
@@ -147,6 +173,22 @@ api-learning-roadmap/
 │   └── python-api/
 │       ├── swagger.json          # Python API Swagger definition
 │       └── index.html            # Python API docs page
+├── case-studies/                 # Real-world API case studies
+│   ├── e-commerce-api/
+│   │   ├── design.md             # E-commerce API design doc
+│   │   └── implementation/       # E-commerce implementation
+│   └── social-media-api/
+│       ├── design.md             # Social media API design doc
+│       └── implementation/       # Social media implementation
+├── exercises/                    # Interactive coding exercises
+│   ├── 01-http-basics/
+│   ├── 02-rest-api/
+│   ├── 03-authentication/
+│   └── 04-testing/
+├── learning-path/                # Structured learning paths
+│   ├── beginner/
+│   ├── intermediate/
+│   └── advanced/
 ├── tools/                        # Development tools
 │   ├── postman-collections/
 │   │   ├── node-api.json         # Node API Postman collection
