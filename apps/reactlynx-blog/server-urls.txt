@@ -1,0 +1,7 @@
+🚀 RSBuild Server ready!
+
+➜  Local:   http://localhost:8080/
+➜  Network: http://192.168.50.131:8080/
+➜  Network: http://172.18.64.1:8080/
+
+Scan this QR code to open on your mobile device:
